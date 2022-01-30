@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  margin: 1rem;
+  font-family: var(--font-family);
+  background-color: var(--surface-a);
+}
+
+.textlayout, p{
+  color: var(--text-color)
+}
+
+
+input {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.87);
+  background: #121212;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid #383838;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  appearance: none;
+  border-radius: 3px;
+}

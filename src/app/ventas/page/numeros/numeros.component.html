@@ -1,0 +1,29 @@
+<div class="textlayout">
+  <h5>{{'DEcimales' | uppercase}}</h5>
+  <div class="p-grid">
+    <div class="p-col">
+      <div class="box">
+        <p-card header="Decimales">
+          {{pi | number:'.1-3'}}
+
+        </p-card>
+      </div>
+    </div>
+    <div class="p-col">
+      <div class="box">
+        <p-card header="Porcentaje">
+          {{(Porcentaje + 200000) | currency:'€'}}
+        </p-card>
+      </div>
+    </div>
+    <div class="p-col">
+      <div class="box">
+        <p-card header="Number">
+          {{numero | number }}
+        </p-card>
+      </div>
+    </div>
+  </div>
+
+
+</div>

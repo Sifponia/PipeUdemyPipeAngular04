@@ -1,0 +1,67 @@
+<div class="textlayout">
+  <h1>Pipes Básicos</h1>
+  <p>Peples incluidos en angular - Common Module</p>
+
+
+  <h5>Basic</h5>
+  <div class="p-grid">
+    <div class="p-col">
+      <div class="box">
+
+        <p-card header="Uppercase"
+                [subheader]="myName">
+          {{myName | uppercase}}
+        </p-card>
+
+      </div>
+    </div>
+    <div class="p-col">
+      <div class="box">
+
+        <p-card header="Titlecase"
+                [subheader]="myName">
+          {{myName | titlecase}}
+        </p-card>
+
+      </div>
+    </div>
+    <div class="p-col">
+      <div class="box">
+
+        <p-card
+          header="Lowercase"
+          [subheader]="myName">
+          {{myName | lowercase}}</p-card>
+
+      </div>
+    </div>
+  </div>
+
+
+  <h5>Fecha</h5>
+  <div class="p-grid">
+    <div class="p-col-6">
+      <div class="box">
+
+        <p-card header="Fecha"
+                subheader="Date">
+          {{date | date }}
+        </p-card>
+
+      </div>
+    </div>
+    <div class="p-col-6">
+      <div class="box">
+
+        <p-card header="Date"
+                subheader="Fecha">
+          {{date | date:'short'}}
+        </p-card>
+
+      </div>
+
+    </div>
+  </div>
+
+
+</div>

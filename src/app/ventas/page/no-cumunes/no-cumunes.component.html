@@ -1,0 +1,49 @@
+<div class="textlayout">
+  <h1>No cumunes</h1>
+  <div class="p-grid">
+
+    <div class="p-col p-md-6">
+      <p-fieldset legend="18nSelectPipe" [toggleable]="true">
+        Saludos {{name}}, es un placer {{gender | i18nSelect:jsonGenero}} a nuestro evento.
+      </p-fieldset>
+
+    </div>
+
+    <div class="p-col p-md-6">
+      <p-fieldset legend="18nSelectPipe Plural" [toggleable]="true">
+
+        Actualmente tenemos un cliente esperando.
+      </p-fieldset>
+
+    </div>
+
+    <div class="p-col p-md-6">
+      <p-fieldset legend="SlicePipe" [toggleable]="true">
+
+        Originales
+        <pre>{{clientes}}</pre>
+
+        <b>slice:0:2"</b>
+        <pre>{{clientes | slice:0:2}}</pre>
+      </p-fieldset>
+
+    </div>
+
+    <div class="p-col p-md-6">
+      <p-fieldset legend="KeyValuePipe" [toggleable]="true">
+
+        <ul>
+          <li *ngFor="let c of persona | keyvalue">{{c.key}} : {{c.value}}</li>
+
+
+        </ul>
+      </p-fieldset>
+
+    </div>
+
+
+  </div>
+
+
+</div>
+
